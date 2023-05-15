@@ -148,14 +148,20 @@
 <dt><kbd>--monolithic-override, --monolithicOverride, -mo</kbd></dt>
 <dd><p>Override a monolithic software environment. All four values are required to reference a monolithic software and its license usage constraint. Currently, the only supported override for a monolithic software environment is the license count, and as a result, only the license count is overridden. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
 </dd>
-<dt><kbd>--min-gpu, --minGpu, -mgpu</kbd></dt>
+<dt><kbd>--min-gpu, --minGpu</kbd></dt>
 <dd><p>The minimum number of GPUs required to parallelize the execution of each task. Only values supported by the selected BP are allowed. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
+</dd>
+<dt><kbd>--max-gpu, --maxGpu</kbd></dt>
+<dd><p>The maximum number of GPUs allowed to parallelize the execution of each task. Only values supported by the selected BP are allowed. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
 </dd>
 <dt><kbd>--min-gpu-mem-gib, --minGpuMemGiB, -mgpuMemGiB</kbd></dt>
 <dd><p>The minimum total size of GPU memory required to support the execution of each task, summing the required memory size for each GPU. Format: Real (e.g., 10.5). Only values supported by the selected BP are allowed. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
 </dd>
-<dt><kbd>--min-vcpu, --minvCpu, -mvcpu</kbd></dt>
+<dt><kbd>--min-vcpu, --minvCpu, --min-cpu</kbd></dt>
 <dd><p>The minimum number of vCPUs required to parallelize the execution of each task. A vCPU refers to a thread of a CPU core. Only values supported by the selected BP are allowed. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
+</dd>
+<dt><kbd>--max-vcpu, --maxvCpu, --max-cpu</kbd></dt>
+<dd><p>The maxiumum number of vCPUs allowed to parallelize the execution of each task. A vCPU refers to a thread of a CPU core. Only values supported by the selected BP are allowed. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
 </dd>
 <dt><kbd>--min-vcpu-mem-gib, --minvCpuMemGiB, -mvcpuMemGiB</kbd></dt>
 <dd><p>The minimum total size of system memory required to support the execution of each task, summing the required memory size for each vCPU. Format: Real (e.g., 10.5). Only values supported by the selected BP are allowed. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
@@ -187,6 +193,10 @@
 <dt><kbd>--is-subject-to-available-resources, --isSubjectToAvailableResources, -istar</kbd></dt>
 <dd><p>Possible choices: true, false</p>
 <p>If true, the cloud strategy optimization will be performed subject to only the cloud resources that are currently available for provisioning, so does the optimal time-cost tradeoff resulting from the optimization. If false, the cloud strategy optimization will be performed regardless of the current availability of cloud resources. If case the optimal virtual HPC infrastructure is unavailable at the time, infrastructure provisioning will be attempted until it becomes available. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
+</dd>
+<dt><kbd>--enable-hyperthreading, --enableHyperthreading, --hyperthreading, -ht</kbd></dt>
+<dd><p>Possible choices: true, false</p>
+<p>For the CPUs that support hyperthreading, enabling hyperthreading allows two threads (vCPUs) to run concurrently on a single CPU core. For HPC workloads, disabling hyperthreading with respect to the same parallelism (e.g., 64 threads on 64 cores with hyperthreading disabled v.s. 64 threads on 32 cores with hyperthreading enabled) shall result in performance improvement often at an increased cost.</p>
 </dd>
 <dt><kbd>--supported-cpu-architectures, --supportedCpuArchitectures, -sca</kbd></dt>
 <dd><p>The CPU architecture(s) compatible with your workload. Running your workload on an incompatible CPU architecture may result in a failed job. Any number of space-separated values can be provided. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
