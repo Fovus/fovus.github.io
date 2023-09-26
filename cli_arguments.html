@@ -10,7 +10,7 @@
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
+
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="_static/documentation_options.js?v=8d563738"></script>
@@ -19,17 +19,17 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to the Fovus documentation!" href="index.html" /> 
+    <link rel="prev" title="Welcome to the Fovus documentation!" href="index.html" />
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
 
-          
-          
+
+
           <a href="index.html" class="icon icon-home">
             Fovus Documentation
           </a>
@@ -72,18 +72,17 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
+
   <section id="fovus-cli">
 <h1>Fovus CLI<a class="headerlink" href="#fovus-cli" title="Link to this heading"></a></h1>
 <p>The Fovus CLI is distributed via PyPI: <a class="reference external" href="https://pypi.org/project/fovus/">https://pypi.org/project/fovus/</a></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">fovus</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">configure</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">create</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="k">with</span><span class="o">-</span><span class="n">upload</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">download</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">files</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">open</span><span class="o">-</span><span class="n">config</span><span class="o">-</span><span class="n">folder</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">get</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">status</span><span class="p">]</span>
-             <span class="p">[</span><span class="o">--</span><span class="n">upload</span><span class="o">-</span><span class="n">files</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="n">config</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">path</span> <span class="n">JOB_CONFIG_FILE_PATH</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">user</span><span class="o">-</span><span class="n">config</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">path</span> <span class="n">USER_CONFIG_FILE_PATH</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">fovus</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">create</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="k">with</span><span class="o">-</span><span class="n">upload</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">download</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">files</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">open</span><span class="o">-</span><span class="n">config</span><span class="o">-</span><span class="n">folder</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">get</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">status</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">upload</span><span class="o">-</span><span class="n">files</span><span class="p">]</span>
+             <span class="p">[</span><span class="o">--</span><span class="n">login</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">logout</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">user</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="n">config</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">path</span> <span class="n">JOB_CONFIG_FILE_PATH</span><span class="p">]</span>
              <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">root</span><span class="o">-</span><span class="n">directory</span> <span class="n">JOB_FILE_ROOT_DIRECTORY</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">local</span><span class="o">-</span><span class="n">path</span> <span class="n">LOCAL_PATH</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">fovus</span><span class="o">-</span><span class="n">path</span> <span class="n">FOVUS_PATH</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">debug</span><span class="o">-</span><span class="n">mode</span><span class="p">]</span>
              <span class="p">[</span><span class="o">--</span><span class="n">exclude</span><span class="o">-</span><span class="nb">input</span> <span class="n">EXCLUDE_INPUT</span> <span class="p">[</span><span class="n">EXCLUDE_INPUT</span> <span class="o">...</span><span class="p">]]</span> <span class="p">[</span><span class="o">--</span><span class="n">exclude</span><span class="o">-</span><span class="n">output</span> <span class="n">EXCLUDE_OUTPUT</span> <span class="p">[</span><span class="n">EXCLUDE_OUTPUT</span> <span class="o">...</span><span class="p">]]</span>
-             <span class="p">[</span><span class="o">--</span><span class="n">include</span><span class="o">-</span><span class="nb">input</span> <span class="n">INCLUDE_INPUT</span> <span class="p">[</span><span class="n">INCLUDE_INPUT</span> <span class="o">...</span><span class="p">]]</span> <span class="p">[</span><span class="o">--</span><span class="n">include</span><span class="o">-</span><span class="n">output</span> <span class="n">INCLUDE_OUTPUT</span> <span class="p">[</span><span class="n">INCLUDE_OUTPUT</span> <span class="o">...</span><span class="p">]]</span> <span class="p">[</span><span class="o">--</span><span class="n">email</span> <span class="n">EMAIL</span><span class="p">]</span>
-             <span class="p">[</span><span class="o">--</span><span class="n">workspace</span><span class="o">-</span><span class="nb">id</span> <span class="n">WORKSPACE_ID</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">benchmarking</span><span class="o">-</span><span class="n">profile</span><span class="o">-</span><span class="n">name</span> <span class="n">BENCHMARKING_PROFILE_NAME</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">computing</span><span class="o">-</span><span class="n">device</span> <span class="p">{</span><span class="n">cpu</span><span class="p">,</span><span class="n">cpu</span><span class="o">+</span><span class="n">gpu</span><span class="p">}]</span>
-             <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="n">name</span> <span class="n">JOB_NAME</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="nb">id</span> <span class="n">JOB_ID</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="ow">is</span><span class="o">-</span><span class="n">single</span><span class="o">-</span><span class="n">threaded</span><span class="o">-</span><span class="n">task</span> <span class="n">IS_SINGLE_THREADED_TASK</span><span class="p">]</span>
-             <span class="p">[</span><span class="o">--</span><span class="n">license</span><span class="o">-</span><span class="n">timeout</span><span class="o">-</span><span class="n">hours</span> <span class="n">LICENSE_TIMEOUT_HOURS</span><span class="p">]</span>
+             <span class="p">[</span><span class="o">--</span><span class="n">include</span><span class="o">-</span><span class="nb">input</span> <span class="n">INCLUDE_INPUT</span> <span class="p">[</span><span class="n">INCLUDE_INPUT</span> <span class="o">...</span><span class="p">]]</span> <span class="p">[</span><span class="o">--</span><span class="n">include</span><span class="o">-</span><span class="n">output</span> <span class="n">INCLUDE_OUTPUT</span> <span class="p">[</span><span class="n">INCLUDE_OUTPUT</span> <span class="o">...</span><span class="p">]]</span>
+             <span class="p">[</span><span class="o">--</span><span class="n">benchmarking</span><span class="o">-</span><span class="n">profile</span><span class="o">-</span><span class="n">name</span> <span class="n">BENCHMARKING_PROFILE_NAME</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">computing</span><span class="o">-</span><span class="n">device</span> <span class="p">{</span><span class="n">cpu</span><span class="p">,</span><span class="n">cpu</span><span class="o">+</span><span class="n">gpu</span><span class="p">}]</span> <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="n">name</span> <span class="n">JOB_NAME</span><span class="p">]</span>
+             <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="nb">id</span> <span class="n">JOB_ID</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="ow">is</span><span class="o">-</span><span class="n">single</span><span class="o">-</span><span class="n">threaded</span><span class="o">-</span><span class="n">task</span> <span class="n">IS_SINGLE_THREADED_TASK</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">license</span><span class="o">-</span><span class="n">timeout</span><span class="o">-</span><span class="n">hours</span> <span class="n">LICENSE_TIMEOUT_HOURS</span><span class="p">]</span>
              <span class="p">[</span><span class="o">--</span><span class="n">monolithic</span><span class="o">-</span><span class="n">override</span> <span class="n">VENDOR_NAME</span> <span class="n">SOFTWARE_NAME</span> <span class="n">LICENSE_FEATURE</span> <span class="n">NEW_LICENSE_COUNT</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">min</span><span class="o">-</span><span class="n">gpu</span> <span class="n">MIN_GPU</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">max</span><span class="o">-</span><span class="n">gpu</span> <span class="n">MAX_GPU</span><span class="p">]</span>
              <span class="p">[</span><span class="o">--</span><span class="nb">min</span><span class="o">-</span><span class="n">gpu</span><span class="o">-</span><span class="n">mem</span><span class="o">-</span><span class="n">gib</span> <span class="n">MIN_GPU_MEM_GIB</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">min</span><span class="o">-</span><span class="n">vcpu</span> <span class="n">MIN_VCPU</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="nb">max</span><span class="o">-</span><span class="n">cluster</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">vcpu</span> <span class="n">JOB_MAX_CLUSTER_SIZE_VCPU</span><span class="p">]</span>
              <span class="p">[</span><span class="o">--</span><span class="nb">max</span><span class="o">-</span><span class="n">vcpu</span> <span class="n">MAX_VCPU</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">min</span><span class="o">-</span><span class="n">vcpu</span><span class="o">-</span><span class="n">mem</span><span class="o">-</span><span class="n">gib</span> <span class="n">MIN_VCPU_MEM_GIB</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">output</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="nb">list</span> <span class="n">OUTPUT_FILE</span> <span class="p">[</span><span class="n">OUTPUT_FILE</span> <span class="o">...</span><span class="p">]]</span>
@@ -94,15 +93,12 @@
              <span class="p">[</span><span class="o">--</span><span class="ow">is</span><span class="o">-</span><span class="n">subject</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">available</span><span class="o">-</span><span class="n">resources</span> <span class="p">{</span><span class="n">true</span><span class="p">,</span><span class="n">false</span><span class="p">}]</span> <span class="p">[</span><span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">hyperthreading</span> <span class="p">{</span><span class="n">true</span><span class="p">,</span><span class="n">false</span><span class="p">}]</span>
              <span class="p">[</span><span class="o">--</span><span class="n">supported</span><span class="o">-</span><span class="n">cpu</span><span class="o">-</span><span class="n">architectures</span> <span class="n">SUPPORTED_CPU_ARCHITECTURE</span> <span class="p">[</span><span class="n">SUPPORTED_CPU_ARCHITECTURE</span> <span class="o">...</span><span class="p">]]</span>
              <span class="p">[</span><span class="o">--</span><span class="n">time</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">cost</span><span class="o">-</span><span class="n">priority</span><span class="o">-</span><span class="n">ratio</span> <span class="n">TIME_TO_COST_PRIORITY_RATIO</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">walltime</span><span class="o">-</span><span class="n">hours</span> <span class="n">WALLTIME_HOURS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">client</span><span class="o">-</span><span class="nb">id</span> <span class="n">CLIENT_ID</span><span class="p">]</span>
-             <span class="p">[</span><span class="o">--</span><span class="n">domain</span><span class="o">-</span><span class="n">name</span> <span class="n">DOMAIN_NAME</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">info</span><span class="o">-</span><span class="n">folder</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">user</span><span class="o">-</span><span class="n">pool</span><span class="o">-</span><span class="nb">id</span> <span class="n">USER_POOL_ID</span><span class="p">]</span>
+             <span class="p">[</span><span class="o">--</span><span class="n">domain</span><span class="o">-</span><span class="n">name</span> <span class="n">API_DOMAIN_NAME</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">info</span><span class="o">-</span><span class="n">folder</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">user</span><span class="o">-</span><span class="n">pool</span><span class="o">-</span><span class="nb">id</span> <span class="n">USER_POOL_ID</span><span class="p">]</span>
 </pre></div>
 </div>
 <section id="named-arguments">
 <h2>Named Arguments<a class="headerlink" href="#named-arguments" title="Link to this heading"></a></h2>
 <dl class="option-list">
-<dt><kbd>--configure, -c</kbd></dt>
-<dd><p>Guided prompt to configure the default user config for the Fovus CLI. The default user config will be stored at ~/.fovus/user_configs/FOVUS_default_user_config.json, and it will be used in the absence of the –user-config-file-path argument.</p>
-</dd>
 <dt><kbd>--create-job-with-upload, --createJobWithUpload, -cjwu</kbd></dt>
 <dd><p>Upload files to Fovus and create a new job. Creates .fovus folder inside the provided job file root directory, which contains data about the job and enables checking job status and downloading job files using the job file root directory. Required additional parameters: (’–job-config-file-path’, ‘–jobConfigFilePath’, ‘-jcfp’), (’–job-file-root-directory’, ‘–jobFileRootDirectory’, ‘-jfdr’).</p>
 </dd>
@@ -118,11 +114,17 @@
 <dt><kbd>--upload-files, --uploadFiles, -uf</kbd></dt>
 <dd><p>Upload a file or folder to Fovus Storage (My Files). Requires the following parameters: (’–local-path’, ‘–localPath’, ‘-lp’).</p>
 </dd>
+<dt><kbd>--login, -l</kbd></dt>
+<dd><p>Login to the Fovus CLI.</p>
+</dd>
+<dt><kbd>--logout, -lo</kbd></dt>
+<dd><p>Logout the current user.</p>
+</dd>
+<dt><kbd>--user, -u</kbd></dt>
+<dd><p>View the current user’s information.</p>
+</dd>
 <dt><kbd>--job-config-file-path, --jobConfigFilePath, -jcfp</kbd></dt>
 <dd><p>Absolute file path to a Fovus job config JSON. Values given in this file will be used unless they are overridden by CLI input. The job config JSON must follow the structure given in the provided job config templates, which are generated when the –open-config-folder command is used and will be located in ~/.fovus/job_configs.</p>
-</dd>
-<dt><kbd>--user-config-file-path, --userConfigFilePath, -ucfp</kbd></dt>
-<dd><p>Absolute file path to a Fovus user config JSON. Values given in this file will be used unless they are overridden by CLI input. If this argument is not provided, the default user config will be used (see –configure). The user config must follow the structure given in the provided user config file, which is generated when the –open-config-folder command is used and will be located in ~/.fovus/user_configs.</p>
 </dd>
 <dt><kbd>--job-file-root-directory, --jobFileRootDirectory, -jfdr</kbd></dt>
 <dd><p>Root directory of job folder. A job folder contains one or multiple task folders. Each folder uploaded under the job folder will be considered a task of the job. Each task folder is a self-contained folder containing the necessary input files and scripts to run the task. For a job that has N tasks (e.g. a DOE job with N simulation tasks), N task folders must exist under the job folder and be uploaded.</p>
@@ -149,12 +151,6 @@
 </dd>
 <dt><kbd>--include-output, --includeOutput, -io</kbd></dt>
 <dd><p>Used with download job files. Include output file path(s) (relative to the job root directory) that match the expression. If a filepath does not match any expression, it will not be downloaded. Wildcard characters (<em>, ?) can be used to specify file and directory patterns (e.g., out?/</em>.txt specifies all .txt files in out1, out2, and out3 folders under the working directory of each task). Supported wildcards: * (matches any number of characters), ? (matches any single character). Note: if a wildcard is used in an input, the input must be surrounded by quotes (e.g., “folder?/input*”).  Any number of space-separated values can be provided.</p>
-</dd>
-<dt><kbd>--email, -e</kbd></dt>
-<dd><p>The email address used for your Fovus account. (Note: Used for overriding user config values. If this value is provided in the user config file, this argument is optional.)</p>
-</dd>
-<dt><kbd>--workspace-id, --workspaceId, -wid</kbd></dt>
-<dd><p>The ID for the workspace you would like to use. The workspace ID can be found by clicking on the user icon in the web UI. (Note: Used for overriding user config values. If this value is provided in the user config file, this argument is optional.)</p>
 </dd>
 <dt><kbd>--benchmarking-profile-name, --benchmarkingProfileName, -bpn</kbd></dt>
 <dd><p>Fovus will optimize the cloud strategies for your job execution, including determining the optimal choices of virtual HPC infrastructure and computation parallelism, if applicable, based upon the selected benchmarking profile. For the best optimization results, select the benchmarking profile whose characteristics best resemble the workload under submission. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
@@ -208,8 +204,7 @@
 <p>Specify whether the output files in outputFileList should be included or excluded from transferring back to the cloud storage after the job is completed. See outputFileList for more information. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
 </dd>
 <dt><kbd>--remote-inputs-for-all-tasks, --remoteInputsForAllTasks, --remote-inputs, -ri</kbd></dt>
-<dd><p>Provide the URL of any file or folder in Fovus storage. The files and folders specified will be included as inputs under the working directory of each task for all tasks and will be excluded from syncing back to Fovus storage as job files. If the file or folder is under My Files, a short relative path works the same as URL.</p>
-<p>For example, path “abc/def.txt” works the same as URL “<a class="reference external" href="https://www.fovus.co/files?path=abc/def.txt">https://www.fovus.co/files?path=abc/def.txt</a>”. Any number of space-separated values can be provided. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
+<dd><p>Provide the URL of or path to any file or folder in Fovus storage. The files and folders specified will be included under the working directory of each task as inputs for all tasks and will be excluded from syncing back to Fovus storage as job files. If the file or folder is from My Files of Fovus Storage, a short relative path works the same as the URL. The path to a folder must end with “/”. Any number of space-separated values can be provided. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)Examples:”folderName/fileName.txt” works the same as “<a class="reference external" href="https://www.fovus.co/files?path=folderName/fileName.txt">https://www.fovus.co/files?path=folderName/fileName.txt</a>””folderName/” works the same as  “<a class="reference external" href="https://www.fovus.co/folders?path=folderName">https://www.fovus.co/folders?path=folderName</a>””</p>
 </dd>
 <dt><kbd>--parallelism-config-files, --parallelismConfigFiles, -pcf</kbd></dt>
 <dd><p>Specify the configuration files that contain Fovus Environment Tokens, if any, using relative paths from the working directory of each task. All Fovus Environment Tokens in the configuration files specified will be resolved to values prior to task execution. Wildcard characters (<em>, ?) can be used to specify file and directory patterns (e.g., out?/</em>.txt specifies all .txt files in out1, out2, and out3 folders under the working directory of each task). Supported wildcards: * (matches any number of characters), ? (matches any single character). Note: if a wildcard is used in an input, the input must be surrounded by quotes (e.g., “folder?/input*”).  Any number of space-separated values can be provided. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
@@ -280,7 +275,7 @@
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+
 
 </footer>
         </div>
@@ -291,7 +286,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
 
 </body>
 </html>
