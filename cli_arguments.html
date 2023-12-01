@@ -247,7 +247,7 @@
 <dt><kbd>--supported-cpu-architectures, --supportedCpuArchitectures, -sca</kbd></dt>
 <dd><p>The CPU architecture(s) compatible with your workload. Running your workload on an incompatible CPU architecture may result in a failed job. Any number of space-separated values can be provided. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
 </dd>
-<dt><kbd>--time-to-cost-priority-ratio, --timeToCostPriorityRatio, -tcr</kbd></dt>
+<dt><kbd>--time-to-cost-priority-ratio, --timeToCostPriorityRatio, -tcpr</kbd></dt>
 <dd><p>Fovus will optimize the cloud strategies for your job execution to minimize the total runtime and cost based on the time-to-cost priority ratio (TCPR) specified below. TCPR defines the weights (amount of importance) to be placed on time minimization over cost minimization on a relative scale. In particular, a ratio of 1/0 or 0/1 will enforce cloud strategies to pursue the minimum achievable runtime or cost without consideration of cost or runtime, respectively. Format must be “num1/num2” where num1 + num2 = 1, 0 &lt;= num1 &lt;= 1, and 0 &lt;= num2 &lt;= 1. (Note: Used for overriding job config values. If this value is provided in the job config file, this argument is optional.)</p>
 </dd>
 <dt><kbd>--license-consuption-profile, --licenseConsumptionProfile, -lcp</kbd></dt>
