@@ -1,9 +1,0 @@
-Fovus CLI
-=============
-
-The Fovus CLI is distributed via PyPI: https://pypi.org/project/fovus/
-
-.. argparse::
-   :module: fovus.cli.documenter
-   :func: get_fovus_parser
-   :prog: fovus
